@@ -1,4 +1,4 @@
-package com.example;
+package kr.domaindriven;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

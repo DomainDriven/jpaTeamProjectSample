@@ -1,4 +1,4 @@
-package com.example.comment;
+package kr.domaindriven.comment;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;

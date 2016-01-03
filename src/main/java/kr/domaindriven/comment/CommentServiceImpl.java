@@ -1,4 +1,4 @@
-package com.example.comment;
+package kr.domaindriven.comment;
 
 import com.thedeanda.lorem.Lorem;
 import com.thedeanda.lorem.LoremIpsum;

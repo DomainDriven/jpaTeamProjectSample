@@ -1,4 +1,4 @@
-package com.example.comment;
+package kr.domaindriven.comment;
 
 import lombok.Data;
 

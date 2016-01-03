@@ -1,4 +1,4 @@
-package com.example.comment;
+package kr.domaindriven.comment;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

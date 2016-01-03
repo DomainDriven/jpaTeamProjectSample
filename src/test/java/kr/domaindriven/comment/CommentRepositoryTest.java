@@ -1,6 +1,6 @@
-package com.example.comment;
+package kr.domaindriven.comment;
 
-import com.example.DemoApplication;
+import kr.domaindriven.DemoApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
