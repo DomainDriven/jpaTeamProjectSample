@@ -1,5 +1,6 @@
 package kr.domaindriven.comment;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
@@ -13,8 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import static org.springframework.web.bind.annotation.RequestMethod.*;
 
 @Controller
+@Slf4j
 public class CommentController {
-
     @Autowired
     CommentRepository repository;
     @Autowired
@@ -31,6 +32,8 @@ public class CommentController {
         model.addAttribute("totalPageNumber", commentPage.getTotalPages());
         model.addAttribute("currentPageNumber", commentPage.getNumber() + 1);
         model.addAttribute("comments", commentPage.getContent());
+
+        log.debug("currentPage : {}, comments : {}", page, commentPage.getContent());
 
         return "page/comment/list";
     }
